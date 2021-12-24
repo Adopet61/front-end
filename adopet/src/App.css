@@ -11,7 +11,7 @@ body {
 	position: inherit;
 	background: #fff;
 	transition: all 0.5s;
-	z-index: 1007;
+	z-index: 997;
 	padding: 25px 0;
 	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -30,19 +30,7 @@ body {
 	letter-spacing: 0.8px;
 	font-family: 'Poppins', sans-serif;
 }
-#header .logo img {
-	max-height: 40px;
-}
 
-@media (max-width: 1002px) {
-	#header {
-		padding: 15px;
-		top: 0;
-	}
-	#header .logo {
-		font-size: 28px;
-	}
-}
 
 
 .nav-menu > ul > li > a:before {
@@ -94,7 +82,7 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: 1;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 0.8px;
 	font-family: 'Poppins',  helvetica;
 }
@@ -141,7 +129,7 @@ body {
 
 #homep {
 	width: 100%;
-	height: 75%;
+	height: 100%;
 	background: url('https://wallup.net/wp-content/uploads/2016/01/227411-Friends-dog-flowers-mist-animals-nature-pet.jpg')
 		top left;
 		
@@ -158,17 +146,14 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-	margin: auto;
-	min-width: 50%;
-	min-height: 50%;
 }
 
 #homep .container {
 	position: relative;
-	padding-top: 142px;
+	padding-top: 132px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
 	#homep .container {
 		padding-top: 60px;
 	}

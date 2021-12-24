@@ -9,7 +9,7 @@ import { Dropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap
 
 import Home from '../Home';
 import Donate from '../Donate';
-import Addanimal from '../Addanimal';
+import Add from '../Add';
 import Animal from '../Animal';
 import cat from "../Animal/cat";
 import dog from "../Animal/dog";
@@ -30,7 +30,7 @@ function Navbar() {
                 <NavLink to="/">Ana Sayfa</NavLink>
               </li>
               <li>
-                <NavLink to="/AddAnimal">Sahiplendir</NavLink>
+                <NavLink to="/Add">Sahiplendir</NavLink>
               </li>
               <li>
                 <NavLink to="/donate">Bağış</NavLink>
@@ -40,9 +40,10 @@ function Navbar() {
                   nav
                   toggle={function noRefCheck() { }}
                 >
+                  
                   <DropdownToggle
                     caret
-                    nav to ="/animal"
+                    nav 
                   >   Sahipsiz Dostlarımız
                   
                   </DropdownToggle>
@@ -65,7 +66,7 @@ function Navbar() {
 
       <Switch>
         <Route path="/" component={Home} />
-        <Route path="/Addanimal" component={Addanimal} />
+        <Route path="/Add" component={Add} />
         <Route path="/donate" component={Donate} />
         <Route path="/cat" component={cat} />
         <Route path="/dog" component={dog} />
