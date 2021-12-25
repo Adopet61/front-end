@@ -16,7 +16,7 @@ function Navbar() {
               <a class="nav-link active" aria-current="page" href="http://localhost:3000/">Anasayfa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost:3000/Adopt">Sahiplendir</a>
+              <a class="nav-link" href="http://localhost:3000/Add">Sahiplendir</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://localhost:3000/Donate">Bağış</a>
