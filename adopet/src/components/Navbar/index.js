@@ -1,80 +1,49 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  NavLink,
-} from "react-router-dom";
-import { Dropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
 
-import Home from '../Home';
-import Donate from '../Donate';
-import Add from '../Add';
-import Animal from '../Animal';
-import cat from "../Animal/cat";
-import dog from "../Animal/dog";
 
 
 function Navbar() {
   return (
-    <Router>
-      <header id="navbar" className="fixed-top">
-        <div className="container">
-          <h1 className="logo">
-            <NavLink to="/">Adopet</NavLink>
-          </h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:3000/">ADOPET</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://localhost:3000/">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/Adopt">Sahiplendir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/Donate">Bağış</a>
+            </li>
+            
+            <li class="nav-item dropdown"  >
+              <button class="btn btn-outline-success me-2" type="button"data-toggle="dropdown">
+                Sahipsiz Dostlarımız
+                </button>
+              
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="http://localhost:3000/Animal/Cat">KEDİ</a></li>
+                <li><a class="dropdown-item" href="http://localhost:3000/Animal/Dog">KÖPEK</a></li>
+                <li><hr class="dropdown-divider"/>
 
-          <nav className="nav-menu ">
-            <ul>
-              <li>
-                <NavLink to="/">Ana Sayfa</NavLink>
-              </li>
-              <li>
-                <NavLink to="/Add">Sahiplendir</NavLink>
-              </li>
-              <li>
-                <NavLink to="/donate">Bağış</NavLink>
-              </li>
-              <li>
-                <Dropdown
-                  nav
-                  toggle={function noRefCheck() { }}
-                >
-                  
-                  <DropdownToggle
-                    caret
-                    nav 
-                  >   Sahipsiz Dostlarımız
-                  
-                  </DropdownToggle>
-                 
-                  <DropdownMenu>
-                    <DropdownItem to="/cat">
-                      Kedi
-                    </DropdownItem>
-                    <DropdownItem to = "/dog">
-                      Köpek
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
-                
-              </li>
-            </ul>
-          </nav>
+                </li>
+            <li><a class="dropdown-item" href="http://localhost:3000/Animal">Tüm Hayvanlar</a></li>
+
+
+              </ul>
+            </li>
+
+          </ul>
+
         </div>
-      </header>
-
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/Add" component={Add} />
-        <Route path="/donate" component={Donate} />
-        <Route path="/cat" component={cat} />
-        <Route path="/dog" component={dog} />
-        <Route path ="/animal" component= {Animal}/>
-      </Switch>
-
-
-    </Router>
+      </div>
+    </nav>
   );
 }
 export default Navbar;

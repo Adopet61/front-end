@@ -1,11 +1,11 @@
 import React from 'react'
 
-function dog() {
+function Dog() {
     return (
         <div>
-            
+            köpek köpek
         </div>
     )
 }
 
-export default dog
+export default Dog;

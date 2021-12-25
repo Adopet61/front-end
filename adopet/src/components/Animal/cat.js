@@ -1,11 +1,11 @@
 import React from 'react'
 
-function cat() {
+function Cat() {
     return (
         <div>
-            
+            kedi kedi
         </div>
     )
 }
 
-export default cat
+export default Cat;

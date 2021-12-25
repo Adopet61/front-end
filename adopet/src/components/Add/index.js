@@ -3,8 +3,10 @@ function Add() {
     return (
       
       <div className="container">
+   
       <form>
-        
+      <h4>Sahiplendirme İçin Önce Formu Doldurunuz
+        </h4>
       <div className="form-group">
       <label htmlFor="exampleInputEmail1">Sahipsiz dostumuzun ismi</label>
       <input type="text" className="form-control" id="extext"  />
@@ -28,8 +30,8 @@ function Add() {
       </div>
     </div>
     <div className="form-group">
-      <label htmlFor="age">Yaşı</label>
-      <input type="number" className="form-control" id="age"  />
+      <label htmlFor="age">Doğum Tarihi</label>
+      <input type="year" className="form-control" id="age"  />
       </div>
       
       <div class="form-group">
