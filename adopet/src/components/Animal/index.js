@@ -5,8 +5,8 @@ import İlan from './İlan'
 function index() {
     return (
         <div>
-           <İlan/>
-           <İlanDetay></İlanDetay>
+           
+           
         </div>
     )
 }

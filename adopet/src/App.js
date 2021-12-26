@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 import Adopt from './components/Adopt';
 import Add from './components/Add';
 import Home from './components/Home';
-import Animal from './components/Animal';
+import İlan from './components/Animal/İlan';
+import İlanDetay from './components/Animal/İlanDetay'
 
 import Donate from './components/Donate';
 
@@ -23,8 +24,8 @@ function App() {
 					<Route path="/Add" exact component={() => <Add/> } />
 					<Route path="/donate" exact  component={() => <Donate/>} />
 					
-					
-					<Route path="/Animal" exact component={() => <Animal/>} />
+					<Route exact path="/Animal/:id" exact component={() => <İlanDetay/>} />
+					<Route path="/Animal" exact component={() => <İlan/>} />
 				
 				</Switch>
 				<Footer />
