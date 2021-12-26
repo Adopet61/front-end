@@ -8,7 +8,7 @@ export default class AnimalService {
             return axios.get("http://localhost:8080/api/images/getAnimalWithImageUrl")
         }
         getAnimalByID(id){
-            return axios.get("http://localhost:8080/api/animals/getbyid?animalId="+ id)
+            return axios.get("http://localhost:8080/api/images/getByImageId?imageId="+ id)
         }
        
     

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import pic1 from "./img_snowtops.jpg";
-import "./ilanDetay.css"
-import AnimalService from './ProductService';
+
+
+import AnimalService from '../../services/AnimalService'
 import { useParams } from "react-router";
 import {Link} from "react-router-dom";
 import { Button,Card, Image } from 'semantic-ui-react';
 
 
 export default function İlanDetay() {
-    let {id } = useParams();
+    let { id } = useParams();
 
     const [animalDetail, setAnimalDetail] = useState({});
 
@@ -34,7 +34,7 @@ export default function İlanDetay() {
                   </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                <Button>Sahiplen</Button>
+                <Button><Link to="../Adopt">Sahiplen</Link></Button>
                 </Card.Content>
                 </div>
             ))}
