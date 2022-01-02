@@ -8,17 +8,14 @@ const store = configureStore();
 
 
 ReactDOM.render(
-<<<<<<< HEAD
+
   <React.StrictMode>
     <Provider store = {store}>
     <App />
     </Provider>
   </React.StrictMode>,
-=======
-  
-    <App />
- ,
->>>>>>> abd063fb0025115c7fed7d44cfa7f1bb7e434c0b
+
+
   document.getElementById('root')
 );
 

@@ -60,9 +60,3 @@ export default function İlanDetay() {
 
 
 
-<<<<<<< HEAD
-=======
-
-    
-     
->>>>>>> abd063fb0025115c7fed7d44cfa7f1bb7e434c0b
