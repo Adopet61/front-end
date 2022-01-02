@@ -1,88 +1,252 @@
 
-function Add() {
+
+
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+
+  Button,
+  Alert,
+  Row,
+  Col,
+
+} from "reactstrap";
+
+
+
+function index() {
+
     return (
-      
-      <div className="container">
-   
-      <form>
-      <h4>Sahiplendirme İçin Önce Formu Doldurunuz
-        </h4>
-      <div className="form-group">
-      <label htmlFor="exampleInputEmail1">Sahipsiz dostumuzun ismi</label>
-      <input type="text" className="form-control" id="extext"  />
-      </div>
-      <div class="form-group">
-      <label for="select1">Türü</label>
-      <select class="form-control" id="select1">
-        <option>Kedi</option>
-        <option>Köpek</option>
-        
-      </select>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Cinsi</label>
-        <input type="name" class="form-control" id="name"/>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="iname">Olduğu Aşılar</label>
-        <input type="name" class="form-control" id="sname"/>
-      </div>
-    </div>
-    <div className="form-group">
-      <label htmlFor="age">Doğum Tarihi</label>
-      <input type="year" className="form-control" id="age"  />
-      </div>
-      
-      <div class="form-group">
-      <label for="select">Cinsiyeti</label>
-      <select class="form-control" id="select">
-        <option>Dişi</option>
-        <option>Erkek</option>
-      </select>
-    </div>
-      <div class="form-group">
-      <label for="select">Kısır Mı?</label>
-      <select class="form-control" id="select">
-        <option>Evet</option>
-        <option>Hayır</option>
-      </select>
-    </div>
-    
-      
-      <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">İsim</label>
-        <input type="name" class="form-control" id="name"/>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="ina">Soyisim</label>
-        <input type="name" class="form-control" id="sname"/>
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Mail</label>
-        <input type="mail" class="form-control" id="mail"/>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="phone">Telefon Numaranız</label>
-        <input type="text" class="form-control" id="phone"/>
-      </div>
-    </div>
-    <div class="custom-file">
-    <input type="file" class="custom-file-input" id="validatedCustomFile" required/>
-    <label class="custom-file-label" for="validatedCustomFile">Dostumuzun Resmini Yükleyin</label>
-    
-  </div>
-    
-      
-      
-      <button type="submit" className="btn btn-primary">GÖNDER</button>
-      </form>
+      <div>
+        <Alert>
+
+          <h4 className="alert">
+
+          </h4>
+          <p>
+            Sahiplendirmek İçin Formu Doldurunuz.
+
+          </p>
+          <hr />
+
+        </Alert>
+        <Form>
+
+
+          <FormGroup>
+            <Col md={10}>
+              <Label for="animalName">
+                Sahipsiz Dostumuzun İsim
+              </Label>
+              <Input
+                id="animalName"
+                name="animalName"
+                type="text"
+             
+              />
+            </Col>
+          </FormGroup>
+
+          <FormGroup>
+            <Col md={10}>
+              <Label for="animalType">
+                Türü
+              </Label>
+              <Input
+                id="animalType"
+                name="animalType"
+                type="select"
+                
+              >
+                <option>
+                  Kedi
+                </option>
+                <option>
+                  Köpek
+                </option>
+
+              </Input>
+            </Col>
+          </FormGroup>
+
+          <Row form>
+            <Col md={5}>
+              <FormGroup>
+                <Label for="animalBreed">
+                  Cinsi
+                </Label>
+                <Input
+                  id="animalBreed"
+                  name="animalBreed"
+                  type="text"
+                  
+                />
+              </FormGroup>
+            </Col>
+            <Col md={5}>
+              <FormGroup>
+                <Label for="vaccine">
+                  Olduğu Aşılar
+                </Label>
+                <Input
+                  id="vaccine"
+                  name="vaccine"
+                  type="text"
+                  
+                />
+              </FormGroup>
+            </Col>
+          </Row>
+
+
+
+
+          <FormGroup>
+            <Col md={10}>
+              <Label for="yearOfBirth">
+                Doğum Tarihi
+              </Label>
+              <Input
+                id="yearOfBirth"
+                name="yearOfBirth"
+                
+                type="date"
+              />
+            </Col>
+          </FormGroup>
+
+          <FormGroup>
+            <Col md={10}>
+              <Label for="animalSex">
+                Cinsiyeti
+              </Label>
+              <Input
+                id="animalSex"
+                name="animalSex"
+                type="select"
+                
+              >
+                <option>
+                  Dişi
+                </option>
+                <option>
+                  Erkek
+                </option>
+
+              </Input>
+            </Col>
+          </FormGroup>
+          <FormGroup>
+            <Col md={10}>
+              <Label for="barren">
+                Kısır Mı?
+              </Label>
+              <Input
+                id="barren"
+                name="barren"
+                type="select"
+          
+              >
+                <option>
+                  Evet
+                </option>
+                <option>
+                  Hayır
+                </option>
+
+              </Input>
+            </Col>
+          </FormGroup>
+          <Row form>
+            <Col md={5}>
+              <FormGroup>
+                <Label for="firstname">
+                  İsim
+                </Label>
+                <Input
+                  id="firstname"
+                  name="firstname"
+                  type="text"
+                  
+                />
+              </FormGroup>
+            </Col>
+            <Col md={5}>
+              <FormGroup>
+                <Label for="lastName">
+                  Soyisim
+                </Label>
+                <Input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  
+                />
+              </FormGroup>
+            </Col>
+          </Row>
+
+          <Row form>
+            <Col md={5}>
+              <FormGroup>
+                <Label for="email">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  
+                />
+              </FormGroup>
+            </Col>
+            <Col md={5}>
+              <FormGroup>
+                <Label for=" phoneNumber">
+                  Telefon Numaranız
+                </Label>
+                <Input
+                  id=" phoneNumber"
+                  name=" phoneNumber"
+                  type="text"
+                  
+                />
+              </FormGroup>
+            </Col>
+          </Row>
+
+
+          <FormGroup>
+            <Col md={10}>
+              <Label for="file">
+                Dostumuzun Resmini Yükleyin
+              </Label>
+              <Input
+                id="file"
+                name="file"
+                type="file"
+                
+              />
+            </Col>
+          </FormGroup>
+
+          <Button
+            name="submit"
+            color="success"
+            
+          >
+
+            GÖNDER
+          </Button>
+        </Form>
       </div>
     );
-  }
   
-  export default Add;
-  
+    }
+
+    
+
+
+export default index;

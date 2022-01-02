@@ -1,61 +1,116 @@
 
-function Adopt() {
-    return (
-      <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">SAHİPSİZ DOSTLARIMIZ İÇİN SICAK BİR YUVA</h4>
+import React from "react";
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input,
+
+  Button,
+  Alert,
+} from "reactstrap";
+
+
+
+ function index() {
+
+  
+  return (
+    <div>
+    <Alert>
       
-      <hr></hr>
-      Kurallarımız:<ul>
+    <h4 className="alert">
+  
+    </h4>
+    <p>
+    Kurallarımız:<ul>
   <li>Sahiplenecek kişinin 18 yaşını doldurmuş olması gerekir.</li>
   <li>Birimlerimize sahiplenme için uygun bir araçla gelmelisiniz.</li>
   <li>Sahiplenmeye gelirken yanınızda tasma veya taşıma kafesiniz olmalıdır.</li>
   <li>Sahiplenen evcil dostumuza bakamıyorsanız aldığınız birime geri bırakmanız zorunludur. Sokağa terk etmeyiniz!</li>
   <li>Köpek / kedi sahiplenecek kişinin T.C. kimlik fotokopisi,  beyanı ve sahiplenme tutanağı yeterlidir.</li>
    </ul>   
+    </p>
+    <hr />
   
-   
+  </Alert>
+  <h4 >Dostumuzu Sahiplenmek İçin Lütfen Formu Doldurunuz</h4>
+    <Form>
       
-      <div className="container">
-       <h4 >Dostumuzu Sahiplenmek İçin Lütfen Formu Doldurunuz</h4>
-      <form>
-      <div className="form-group">
-      <label htmlFor="name">İsim</label>
-      <input type="name" className="form-control" id="name"  />
-      </div>
+      <FormGroup>
+        <Label for="name">
+          İsim
+        </Label>
+        <Input
+          id="name"
+          name="name"
       
-      <div className="form-group">
-      <label htmlFor="sname">Soyisim</label>
-      <input type="text" className="form-control" id="sname"  />
-      </div>
-      <div className="form-group">
-      <label htmlFor="phone">Telefon Numaranız</label>
-      <input type="phonenumber" className="form-control" id="phone"  />
-      </div>
-      <div className="form-group">
-      <label htmlFor="email">E-mail</label>
-      <input type="email" className="form-control" id="email"  />
-      </div>
-      <div class="form-group">
-      <label for="havepet">Daha önce hiç evcil hayvanınız oldu mu?</label>
-      <select class="form-control" id="havepet">
-        <option>Evet</option>
-        <option>Hayır</option>
-       
-      </select>
-    </div>
-      <div class="form-group">
-      <label for="textarea">Neden Hayvan Sahiplenmek İstiyorsunuz?</label>
-      <textarea class="form-control" id="textarea" rows="3"></textarea>
-    </div>
+          type="text"
+        />
+      </FormGroup>
+      <FormGroup>
+        <Label for="surname">
+          Soyisim
+        </Label>
+        <Input
+          id="phone"
+          name="phone"
+          
+          type="text"
+        />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleEmail">
+          Email
+        </Label>
+        <Input
+          id="exampleEmail"
+          name="email"
+          
+          type="email"
+        />
+      </FormGroup>
+      
     
+    <FormGroup>
+    <Label for="exampleSelect">
+    Daha Önce Evcil Hayvanınız Oldu Mu?
+    </Label>
+    <Input
+      id="exampleSelect"
+      name="select"
+      type="select"
+    >
+      <option>
+        EVET
+      </option>
+      <option>
+        HAYIR
+      </option>
       
+    </Input>
+  </FormGroup>
+      <FormGroup>
+        <Label for="exampleText">
+          Neden Hayvan Sahiplenmek İstiyorsunuz?
+        </Label>
+        <Input
+          id="exampleText"
+          name="text"
+          type="textarea"
+        />
+      </FormGroup>
       
-      <button type="submit" className="btn btn-primary">GÖNDER</button>
-      </form>
-      </div>
-      </div>
-    );
-  }
-  
-  export default Adopt;
-  
+       
+      
+      <Button 
+      name = "submit"
+       color="success">
+        GÖNDER
+      </Button>
+    </Form>
+</div>
+  );
+
+}
+export default index;
