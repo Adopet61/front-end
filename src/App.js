@@ -8,10 +8,7 @@ import Add from './components/Add';
 import Home from './components/Home';
 import İlan from './components/Animal/İlan';
 
-
 import İlanDetay from './components/Animal/İlanDetay'
-
-
 import Donate from './components/Donate';
 
 
@@ -28,9 +25,7 @@ function App() {
 					<Route path="/Add" exact component={() => <Add/> } />
 					<Route path="/donate" exact  component={() => <Donate/>} />
 					
-
 					<Route exact path="/Animal/:id"  component={() => <İlanDetay/>} />
-
 					<Route path="/Animal" exact component={() => <İlan/>} />
 				
 				</Switch>

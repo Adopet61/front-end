@@ -211,7 +211,7 @@ function index() {
                   id=" phoneNumber"
                   name=" phoneNumber"
                   type="text"
-                  
+                  placeholder= "Telefon numaranızı başına 0 koymadan yazınız."
                 />
               </FormGroup>
             </Col>
