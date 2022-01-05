@@ -5,8 +5,7 @@ import {
   FormGroup,
   Label,
   Input,
-  Row,
-  Col,
+
   Button,
   Alert,
 } from "reactstrap";
@@ -39,7 +38,6 @@ import {
     <Form>
       
       <FormGroup>
-      <Col md={10}>
         <Label for="name">
           İsim
         </Label>
@@ -49,10 +47,8 @@ import {
       
           type="text"
         />
-        </Col>
       </FormGroup>
       <FormGroup>
-      <Col md={10}>
         <Label for="surname">
           Soyisim
         </Label>
@@ -62,41 +58,21 @@ import {
           
           type="text"
         />
-        </Col>
       </FormGroup>
-      <Row form>
-            <Col md={5}>
-              <FormGroup>
-                <Label for="email">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  
-                />
-              </FormGroup>
-            </Col>
-            <Col md={5}>
-              <FormGroup>
-                <Label for=" phoneNumber">
-                  Telefon Numaranız
-                </Label>
-                <Input
-                  id=" phoneNumber"
-                  name=" phoneNumber"
-                  type="text"
-                  placeholder= "Telefon numaranızı başına 0 koymadan yazınız."
-                />
-              </FormGroup>
-            </Col>
-          </Row>
-
+      <FormGroup>
+        <Label for="exampleEmail">
+          Email
+        </Label>
+        <Input
+          id="exampleEmail"
+          name="email"
+          
+          type="email"
+        />
+      </FormGroup>
       
     
     <FormGroup>
-    <Col md={10}>
     <Label for="exampleSelect">
     Daha Önce Evcil Hayvanınız Oldu Mu?
     </Label>
@@ -113,10 +89,8 @@ import {
       </option>
       
     </Input>
-    </Col>
   </FormGroup>
       <FormGroup>
-      <Col md={10}>
         <Label for="exampleText">
           Neden Hayvan Sahiplenmek İstiyorsunuz?
         </Label>
@@ -125,7 +99,6 @@ import {
           name="text"
           type="textarea"
         />
-        </Col>
       </FormGroup>
       
        

@@ -52,7 +52,7 @@ function index() {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="http://localhost:3000/Animal/İlan">
+          <NavLink href="http://localhost:3000/Animal">
           <Button
             color="success"
             size="sm"
