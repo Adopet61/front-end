@@ -10,14 +10,19 @@ import { Button, Card, Image,Grid } from 'semantic-ui-react';
 export default function İlanDetay() {
     let { id } = useParams();
 
-    const [an, setAnimal] = useState({});
-   
+    const [ana, setAnimal] = useState({});
+    const [animg,setAnimg] = useState([]);
+
 
 
     useEffect(() => {
         let animalService = new AnimalService()
         animalService.getAnimalByID(id).then(result => setAnimal(result.data.data))
     }, [])
+    useEffect(() => {
+      let animalService = new AnimalService()
+      animalService.getAnimalByimg(id).then(result => setAnimg(result.data.data))
+  }, [])
 
 
     return (
@@ -31,24 +36,31 @@ export default function İlanDetay() {
 
         <Card.Group>
         <Card >
-            
-                <Image floated='right' size='mini' src={an.url} wrapped ui={false} />
+
+                <Image floated='right' size='mini' src={animg.url} wrapped ui={false} />
                 <Card.Content>
-                  <Card.Header>{an.animal.animalName}</Card.Header>
+                  <Card.Header>{ana.animalName}</Card.Header>
                   <Card.Meta>
-                   <p>{an.animalBreed.breedName}</p>
+                   <p>{ana.description}</p>
                   </Card.Meta>
                   <Card.Description>
-                    {an.animal.description}
+                   <b>Doğum Yılı:</b> {ana.yearOfBirth}
                   </Card.Description>
+
+                  <Card.Description>
+                  <b> Cinsiyeti: </b> {ana.gender}
+                  </Card.Description>
+
+                  <Card.Description>
+                  <b> Aşı Durumu:</b> {ana.infertilityStatus}
+                  </Card.Description>
+
                 </Card.Content>
                 <Card.Content extra>
                 <Button><Link to="../Adopt">Sahiplen</Link></Button>
                 </Card.Content>
         </Card>
         </Card.Group>
-        
-
 
         </Grid.Column>
         </Grid.Row>
@@ -56,7 +68,3 @@ export default function İlanDetay() {
 </div>
     )
 }
-
-
-
-
