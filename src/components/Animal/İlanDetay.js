@@ -53,11 +53,11 @@ export default function İlanDetay() {
                   </Card.Description>
 
                   <Card.Description>
-<<<<<<< HEAD:adopet/src/components/Animal/İlanDetay.js
+
                   <b> Kısırlık Durumu:</b> {ana.infertilityStatus}
-=======
-                  <b> Aşı Durumu:</b> {ana.infertilityStatus}
->>>>>>> 63a17e9deac3e6ac5ebc4341b665664ef00d7096:src/components/Animal/İlanDetay.js
+
+                 
+
                   </Card.Description>
 
                 </Card.Content>
