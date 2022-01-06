@@ -20,11 +20,11 @@ npm i axios
 indirilmelidir. Ardından proje npm start ile çalıştırılmalıdır. Proje çalıştığında https://localhost:3000 adresi üzerinden projenin çalışan hali görülür.
 ___
 # 
-![] (https://res.cloudinary.com/adopet/image/upload/v1641502624/unknown4_o0vnvp.png)
-![] (https://res.cloudinary.com/adopet/image/upload/v1641502623/unknown6_eh8tke.png)
-![] (https://res.cloudinary.com/adopet/image/upload/v1641502623/unknown5_wfvq4n.png)
+![](https://res.cloudinary.com/adopet/image/upload/v1641502624/unknown4_o0vnvp.png)
+![](https://res.cloudinary.com/adopet/image/upload/v1641502623/unknown6_eh8tke.png)
+![](https://res.cloudinary.com/adopet/image/upload/v1641502623/unknown5_wfvq4n.png)
 ![](https://res.cloudinary.com/adopet/image/upload/v1641502623/1_cyhbi5.png)
-![] (https://res.cloudinary.com/adopet/image/upload/v1641502623/unknown3_el3rmc.png)
-![] (https://res.cloudinary.com/adopet/image/upload/v1641502624/unknown2_rtfgvi.png)
+![](https://res.cloudinary.com/adopet/image/upload/v1641502623/unknown3_el3rmc.png)
+![](https://res.cloudinary.com/adopet/image/upload/v1641502624/unknown2_rtfgvi.png)
  
 
