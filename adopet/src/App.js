@@ -7,6 +7,7 @@ import Adopt from './components/Adopt';
 import Add from './components/Add';
 import Home from './components/Home';
 import İlan from './components/Animal/İlan';
+import { Container } from 'semantic-ui-react';
 
 
 import İlanDetay from './components/Animal/İlanDetay'
@@ -28,11 +29,11 @@ function App() {
 					<Route path="/Add" exact component={() => <Add/> } />
 					<Route path="/donate" exact  component={() => <Donate/>} />
 					
-
+					<Container className="main" style={{marginTop: "100px"}}>
 					<Route exact path="/Animal/:id"  component={() => <İlanDetay/>} />
 
 					<Route path="/Animal" exact component={() => <İlan/>} />
-				
+					</Container>
 				</Switch>
 				<Footer />
 			</Router>

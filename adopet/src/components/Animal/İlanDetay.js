@@ -27,6 +27,7 @@ export default function İlanDetay() {
 
     return (
         <div>
+          
 
 <Grid>
   <Grid.Row>
@@ -52,7 +53,7 @@ export default function İlanDetay() {
                   </Card.Description>
 
                   <Card.Description>
-                  <b> Aşı Durumu:</b> {ana.infertilityStatus}
+                  <b> Kısırlık Durumu:</b> {ana.infertilityStatus}
                   </Card.Description>
 
                 </Card.Content>
